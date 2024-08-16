@@ -22,7 +22,6 @@ function onload_alarms(){
 
 function onload_ping(){
     xhr = new XMLHttpRequest (); 
-//    load_data();
 }
 
 function Timer1(){
@@ -217,14 +216,12 @@ function starthandler() {
 
 function led_on(){
     xhr.open("GET", "switch_led?c=1", true);
-//    xhr.responseType = "text";
     xhr.send(null);
 }
 
 
 function led_off(){
     xhr.open("GET", "switch_led?c=0", true);
-//    xhr.responseType = "text";
     xhr.send(null);
 }
 
@@ -278,7 +275,6 @@ function set_static(){
 
 function load_data(){
     xhr.onload = function() {
-//    xhr.onreadystatechange = function() {
         let state = this.responseText;
         if (state == "") {
             return;
