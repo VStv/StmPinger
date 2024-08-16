@@ -263,13 +263,6 @@ function submit_alarm(){
         "&blue=" + document.getElementsByName('blue')[0].checked + 
         "&green=" + document.getElementsByName('green')[0].checked, true);
     xhr.send(null); 
-    
-    // document.getElementById('demo3').innerHTML = "setalarm?unreplied=" + document.getElementsByName('unrepl')[0].value +
-    //     "&email=" + document.getElementsByName('email')[0].value +
-    //     "&telega=" + document.getElementsByName('telega')[0].value + 
-    //     "&red=" + document.getElementsByName('red')[0].checked +
-    //     "&blue=" + document.getElementsByName('blue')[0].checked + 
-    //     "&green=" + document.getElementsByName('green')[0].checked;
 }
 
 
